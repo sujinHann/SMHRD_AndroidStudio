@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Ex0407</string>
+
+    <!-- activity_main.xml    -->
+    <string name="plus">plus</string>
+    <string name="minus">minus</string>
+
+    <string name="num">0</string>
+
+    <!-- activity_main2.xml    -->
+    <string name="plu">더하기</string>
+    <string name="min">빼기</string>
+    <string name="mul">곱하기</string>
+    <string name="div">나누기</string>
+
+    <string name="num1">첫번째 숫자 입력</string>
+    <string name="num2">두번째 숫자 입력</string>
+
+    <string name="result">연산결과: 0</string>
+
+    <!-- activity_main3.xml    -->
+    <string name="btnChange_text">감추기</string>
+
+    <!-- activity_main4.xml    -->
+    <string name="btnPre_text">이전</string>
+    <string name="btnNext_text">다음</string>
+
+    <!-- activity_main5.xml    -->
+    <string name="btn_shake">SHAKE</string>
+    <string name="dice">DICE</string>
+    <string name="game">0:0</string>
+
+</resources>
