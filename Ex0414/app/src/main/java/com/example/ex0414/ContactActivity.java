@@ -19,7 +19,7 @@ public class ContactActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
 
-        lvContact = findViewById(R.id.lvContact);
+        lvContact = findViewById(R.id.lv_product);
         list = new ArrayList<ContactVO>();
 
         for(int i=0; i<20; i++){
