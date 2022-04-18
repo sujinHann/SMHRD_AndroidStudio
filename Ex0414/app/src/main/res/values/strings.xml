@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Ex0414</string>
-
-    <!--activity_main.xml-->
-    <string name="btnRegister_text">등록</string>
-
-</resources>
