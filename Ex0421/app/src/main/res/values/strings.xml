@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Ex0421</string>
+
+    <!--Login.xml    -->
+    <string name="tv_login">Login</string>
+    <string name="tv_id">ID입력</string>
+    <string name="tv_pw">PW입력</string>
+    <string name="btn_login">로그인</string>
+    <string name="btn_join">회원가입</string>
+
+    <!--Join.xml    -->
+    <string name="tv_joinid">가입할 ID입력</string>
+    <string name="tv_joinnick">NICK입력</string>
+    <string name="tv_joinpw">PW입력</string>
+    <string name="btn_resjoin">회원가입</string>
+
+</resources>
