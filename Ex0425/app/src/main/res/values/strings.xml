@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Ex0425</string>
+
+    <!-- login.xml    -->
+    <string name="tvMain">Sujin Talk</string>
+    <string name="edtUserId"></string>
+    <string name="edtUserPw"></string>
+    <string name="btnLogin">Login</string>
+
+    <!-- chat.xml    -->
+    <string name="btnMsgSend">전송</string>
+
+
+</resources>
