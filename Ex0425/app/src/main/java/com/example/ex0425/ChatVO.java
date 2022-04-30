@@ -1,12 +1,13 @@
 package com.example.ex0425;
 
 public class ChatVO {
+
     private int imgId;
     private String name;
     private String msg;
     private String time;
 
-    public ChatVO() {}
+    public  ChatVO(){}
 
     public ChatVO(int imgId, String name, String msg, String time) {
         this.imgId = imgId;
@@ -47,13 +48,5 @@ public class ChatVO {
         this.time = time;
     }
 
-    @Override
-    public String toString() {
-        return "ChatVO{" +
-                "imgId=" + imgId +
-                ", name='" + name + '\'' +
-                ", msg='" + msg + '\'' +
-                ", time='" + time + '\'' +
-                '}';
-    }
+
 }

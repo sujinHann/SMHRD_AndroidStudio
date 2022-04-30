@@ -3,14 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="#b2c7d9">
 
     <ImageView
         android:id="@+id/imgOther"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_launcher_background" />
@@ -19,54 +20,59 @@
         android:id="@+id/tvOtherNm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="16dp"
         android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/tvOtherMsg"
         app:layout_constraintStart_toEndOf="@+id/imgOther"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imgOther"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/tvOtherMsg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="5dp"
         android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/tvOtherNm"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgOther"
         app:layout_constraintStart_toStartOf="@+id/tvOtherNm"
-        tools:layout_editor_absoluteY="79dp" />
-
-    <TextView
-        android:id="@+id/tvotherTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/tvOtherMsg"
         app:layout_constraintTop_toBottomOf="@+id/tvOtherNm" />
 
     <TextView
-        android:id="@+id/tvMyTime"
-        android:layout_width="64dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
+        android:id="@+id/tvOtherTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:text="TextView"
-        app:layout_constraintEnd_toStartOf="@+id/tvMyMsg"
-        app:layout_constraintStart_toEndOf="@+id/tvotherTime"
-        app:layout_constraintTop_toBottomOf="@+id/tvotherTime" />
+        app:layout_constraintBottom_toBottomOf="@+id/tvOtherMsg"
+        app:layout_constraintStart_toEndOf="@+id/tvOtherMsg" />
+
+    <TextView
+        android:id="@+id/tvMyTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMyMsg"
+        app:layout_constraintEnd_toStartOf="@+id/tvMyMsg" />
 
     <TextView
         android:id="@+id/tvMyMsg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:background="#FFEB3B"
-        android:backgroundTint="#FFEB3B"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="4dp"
+        android:background="#fbe200"
+        android:padding="5dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/tvMyTime"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvMyTime"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,6 +14,9 @@ public class LoginActivity extends AppCompatActivity {
     EditText edtUserId, edtUserPw;
     Button btnLogin;
 
+    String [] userIdList = {"smhrd","sj"};
+    String [] userPwList = {"4321","1234"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,19 +36,31 @@ public class LoginActivity extends AppCompatActivity {
                 String id = edtUserId.getText().toString();
                 String pw = edtUserPw.getText().toString();
 
-                if(id.equals("sj") && pw.equals("1234")){
+                for(int i = 0; i<userIdList.length; i++){
+                    if(id.equals(userIdList[i]) && pw.equals(userPwList[i])){
 
-                    Intent intent = new Intent(LoginActivity.this,
-                            ChatActivity.class);
-                    intent.putExtra("login_id",id);
+                        Intent intent = new Intent(LoginActivity.this,
+                                ChatActivity.class);
+                        intent.putExtra("login_id",id);
 
-                    startActivity(intent);
+                        startActivity(intent);
 
-                }else{
-                    Toast.makeText(LoginActivity.this,
-                            "다시로그인해주세요",
-                            Toast.LENGTH_SHORT).show();
+                        break;
+                    }
+
+                    if(i==userIdList.length-1){
+                        Toast.makeText(LoginActivity.this,
+                                "다시로그인해주세요",
+                                Toast.LENGTH_SHORT).show();
+                    }
                 }
+
+
+
+
+
+
+
             }
         });
 
