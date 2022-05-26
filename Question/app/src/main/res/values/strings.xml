@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Question</string>
+
+    <!--Question1    -->
+    <string name="btn_first">첫번째 버튼</string>
+    <string name="btn_second">두번째 버튼</string>
+    <string name="btn_third">세번째 버튼</string>
+
+    <string name="btn_ch1">1ST BUTTON!</string>
+    <string name="btn_ch2">2ST BUTTON!</string>
+    <string name="btn_ch3">3RD BUTTON!</string>
+
+    <!--Question2    -->
+    <string name="btnPre_text">PRE</string>
+    <string name="btnNext_text">NEXT</string>
+
+
+</resources>
